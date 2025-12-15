@@ -49,9 +49,11 @@
    <link rel="alternate" hreflang="ru" href="https://www.tattoo-saransk.ru/" />
 
    <!-- Structured Data -->
-   <script type="application/ld+json">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": ["TattooStudio", "LocalBusiness"],
       "image": "https://www.tattoo-saransk.ru/img/logo.webp",
       "name": "Тату-студия Вирь",
@@ -67,7 +69,7 @@
       },
       "geo": {
          "@type": "GeoCoordinates",
-         "latitude": 54.207764, 
+         "latitude": 54.207764,
          "longitude": 45.109198
       },
       "openingHoursSpecification": {
@@ -77,54 +79,40 @@
         "closes": "22:00"
       },
       "priceRange": "$$",
-      "hasMap": "https://www.google.com/maps/place/г.+Саранск,+ул.+Победы,+20",
-      "makesOffer": {
-         "@type": "Offer",
-         "businessFunction": "http://purl.org/goodrelations/v1#ProvideService",
-         "itemOffered": {
-            "@type": "Service",
-            "name": "Услуги по нанесению татуировок",
-            "serviceType": "Татуировки",
-            "provider": {
-            "@type": "Organization",
-            "name": "Тату-студия «Вирь»"
-            },
-            "areaServed": "Саранск и Республика Мордовия",
-            "description": "Профессиональные татуировки в различных стилях: реализм, акварель, геометрия, минимализм. Индивидуальные эскизы и готовые проекты. Гарантия стерильности."
-         }
-      }
+      "hasMap": "https://www.google.com/maps/place/г.+Саранск,+ул.+Победы,+20"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Как подготовиться к сеансу татуировки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Выспитесь, хорошо поешьте за 1-2 часа до сеанса, избегайте алкоголя за 24-48 часов, сократите кофеин, примите душ перед процедурой."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Как ухаживать за татуировкой после сеанса?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Меняйте компресс каждые 4-5 часов, промывайте тату с мылом, мажьте пантенолом 2 раза в день в течение 20 дней."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Какие противопоказания при заживлении татуировки?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Исключить алкоголь (4 дня), спорт (10 дней), не чесать корки (14 дней), не распаривать в ванной (14 дней)."
+          }
+        }
+      ]
     }
-   </script>
-
-   <!-- FAQ разметка отдельно -->
-   <script type="application/ld+json">
-   {
-   "@context": "https://schema.org",
-   "@type": "FAQPage",
-   "mainEntity": [{
-      "@type": "Question",
-      "name": "Как подготовиться к сеансу татуировки?",
-      "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Выспитесь, хорошо поешьте за 1-2 часа до сеанса, избегайте алкоголя за 24-48 часов, сократите кофеин, примите душ перед процедурой."
-      }
-   }, {
-      "@type": "Question",
-      "name": "Как ухаживать за татуировкой после сеанса?",
-      "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Меняйте компресс каждые 4-5 часов, промывайте тату с мылом, мажьте пантенолом 2 раза в день в течение 20 дней."
-      }
-   }, {
-      "@type": "Question",
-      "name": "Какие противопоказания при заживлении татуировки?",
-      "acceptedAnswer": {
-         "@type": "Answer",
-         "text": "Исключить алкоголь (4 дня), спорт (10 дней), не чесать корки (14 дней), не распаривать в ванной (14 дней)."
-      }
-   }]
-   }
-   </script>
+  ]
+}
+</script>
 
    <title>Тату-студия "Вирь" в Саранске | Профессиональные татуировки</title>
 </head>
