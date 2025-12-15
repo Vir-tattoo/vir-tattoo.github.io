@@ -1,0 +1,80 @@
+/* TEAM */
+Тату-студия "Вирь" в Саранске
+Адрес: г. Саранск, ул. Победы, д.20
+Телефон: +7(999)544-00-05
+
+Мастера:
+Tattoo Master: Даша
+Specialization: Реализм, портреты, масштабные работы
+Portfolio: https://vk.com/album-172116286_285685348
+
+Tattoo Master: Катя  
+Specialization: Черно-белое тату, абстракция, мастер с опытом
+Portfolio: https://vk.com/album-172116286_305365379
+
+Tattoo Master: Александра Гостевой мастер
+Specialization: Геометрия, минимализм, масштабные работы, мастер с опытом
+Portfolio: https://vk.com/album-172116286_308263785
+
+Tattoo Master: Ксюша
+Specialization: Надписи, мини-татуировки, начинающий мастер
+Portfolio: https://vk.com/album-172116286_305546392
+
+Tattoo Master: Саша
+Specialization: Трайбл, трайбл-модерн, андеграунд татуировки, мастер с опытом
+Portfolio: https://vk.com/album-172116286_258410224
+
+Tattoo Master: Наташа
+Specialization: Черно-белые татуировки, орнаменты, художественное образование
+Portfolio: https://vk.com/album-172116286_306740051
+
+Tattoo Master: Анастасия
+Specialization: Черно-белые тату, миниатюры, художественное образование
+Portfolio: https://vk.com/album-172116286_306740191
+
+Master Trainer: Дарья Гумаюнова
+Specialization: Обучение татуировке, мастер-классы
+Contact: https://vk.com/veerga_tattoo
+
+/* SITE */
+Last Update: 2025-12-15
+Language: Russian (Русский)
+Doctype: HTML5
+CSS: CSS3, Mobile First
+JavaScript: Vanilla JS, Swiper.js
+Standards: W3C, ARIA, Schema.org, Open Graph
+Performance: Lazy Loading, WebP images
+
+Site Goals:
+- Showcase portfolio works
+- Provide studio information
+- Simplify consultation booking
+- Answer common questions
+
+/* THANKS */
+Clients for trust
+VK for platform
+Swiper for slider
+Freepik for icons
+
+/* CONTACT */
+VK: https://vk.com/vir_tatu_saransk
+Telegram: https://t.me/saransktattoo
+WhatsApp: https://wa.me/79995440005
+Email: bupbtattoo@yandex.ru
+
+Режим работы: Ежедневно 10:00-22:00
+
+/* NOTE */
+Мы любим наше дело и каждого клиента!
+Все работы выполняются в стерильных условиях.
+Используем только профессиональные пигменты.
+
+/* SITE URLS */
+Main: https://www.tattoo-saransk.ru/
+VK Group: https://m.vk.com/vir_tatu_saransk
+VK Training: https://m.vk.com/veerga_tattoo
+Price Calculator: https://m.vk.com/app5898182_-172116286?ref=group_menu#s=1738898
+
+/* END */
+© 2025 Tattoo Studio "Vir". Saransk, Russia.

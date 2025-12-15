@@ -1,0 +1,652 @@
+.wrapper {
+   width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+   font-family: "Times New Roman", Times, serif;
+   background-color: RGB(25, 23, 22);
+   overflow: hidden;
+}
+.site-header {
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/vir_tattoo_header.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.header-container {
+   max-width: 100%;
+   height: 30rem;
+   position: relative;
+   margin: 0 auto;
+}
+.logo-container {
+   max-width: 22rem;
+   height: 3.5rem;
+   font-style: normal;
+   font-size: 2rem;
+   line-height: 3.5rem;
+   cursor: pointer;
+}
+.logo-image {
+   max-width: 3rem;
+}
+.logo-text {
+   display: table-cell;
+   vertical-align: middle;
+   font-size: 1.25rem;
+   font-weight:bold
+}
+.logo-link:hover{
+   color:red;
+}
+.logo-link:active {
+   color:gray;
+}
+.logo-link {
+   text-decoration: none;
+   color: #ffffff;
+   z-index: 100000;
+}
+.main-navigation {
+   display: flex;
+   justify-content: space-between;
+   margin-left: 1rem;
+   margin-right: 1rem;
+}
+.menu-toggle-input {
+   opacity: 0;
+   position: absolute;
+   z-index: -10;
+}
+.menu-toggle-label {
+   opacity: 0;
+}
+.navigation-menu {
+   display: flex;
+   font-style: normal;
+   font-weight: bold;
+   color: #000000;
+   list-style-type: none;
+   z-index: 10;
+   text-decoration: none;
+   justify-content: space-between;
+   min-height: 5.375rem;
+}
+.nav-item {
+   height: 1.25rem;
+   margin-left: 0.5rem;
+   margin-right: 0.5rem;
+}
+.nav-link {
+   text-decoration: none;
+   color: white;
+   font-size: 1.1rem;
+}
+.nav-link:hover {
+   color: red;
+}
+.nav-link:active {
+   color: gray;
+   font-size: 1.125rem;
+}
+@keyframes speed {
+   0%, 20%, 60%, 100% {
+      transform: translateX(0);
+      transform: translateX(0);
+   }
+   40% {
+      transform: translateX(1.25rem);
+      transform: translateX(1.25rem);
+   }
+   80% {
+      transform: translateX(0.625rem);
+      transform: translateX(0.625rem);
+   }
+}
+.hero-section {
+  max-width: 80rem;
+  min-height: 39.0625rem;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.cta-button {
+  min-width: 100%;
+  min-height: 2.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+}
+
+.social-button {
+  justify-content: space-around;
+   padding-inline-start: 0rem;
+   display: flex;
+   flex-wrap: wrap;
+
+   align-items: center;
+   align-content: center;
+   list-style-type: none;
+   padding-left: 0px;
+}
+
+.primary-button {
+  font-size: 1.2rem;
+  border-radius: 35px;
+  gap: 0.3rem; 
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+.primary-button:hover {
+  color: red;
+}
+.primary-button-url {
+  text-decoration: none;
+  color: black;
+}
+.hero-content {
+   margin-top: 6.3125rem;
+   max-width: 30.375rem;
+   position: relative;
+   margin-left: 1vw;
+   opacity: 0;
+   animation-duration: 0.75s;
+  animation-delay: 0.5s;
+  animation-name: surprise;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: forwards;
+}
+@keyframes surprise {
+      0% {
+        opacity: 0;
+        filter: brightness(3) saturate(3);
+        transform: scale(0.8, 0.8);
+      }
+      100% {
+        opacity: 1;
+        filter: brightness(1) saturate(1);
+        transform: scale(1, 1);
+      }
+}
+.hero-title {
+   font-size: 1.7rem;
+   font-weight: 700;
+   text-align: center;
+   color: white;
+}
+.benefits-list{
+      font-size: 1.125rem;
+      list-style: none;
+      color: white;
+      padding-inline-start: 0rem;
+}
+.portfolio-slider{
+   padding: 5.625rem 0.625rem 0rem 1.875rem;
+   max-width: 30.375rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   position: relative;
+   opacity: 0;
+   animation-duration: 0.75s;
+  animation-delay: 2s;
+  animation-name: surprise;
+  animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+  animation-fill-mode: forwards;
+}
+.section-title {
+  position: relative;
+   text-align: center;
+   font-size: 1.5rem;
+   text-align: center;
+   color: white;
+   margin-bottom: 1rem;
+   margin-top: 2rem;
+}
+
+@keyframes speed {
+   0%, 20%, 60%, 100% {
+      transform: translateX(0);
+   transform: translateY(0);
+   }
+   40% {
+      transform: translateX(1.25rem);
+      transform: translateX(1.25rem);
+   }
+   80% {
+      transform: translateX(0.625rem);
+      transform: translateX(0.625rem);
+   }
+}
+.reviews-section {
+   max-width: 100%;
+   margin: 0 auto;
+   position: relative;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+}
+
+.review-platforms {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   list-style-type: none;
+   padding-left: 0px;
+}
+
+.review-platform-logo {
+   width: 12rem;
+   padding: 1rem;
+}
+.review-platform-logo:hover {
+   width: 12rem;
+   padding: 0rem;
+}
+
+.faq {
+   max-width: 100%;
+   margin: 0 auto;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+   min-height: 0px; /* Минимальная высота для контейнера FAQ */
+  position: relative;
+}
+
+.faq-question {
+   background-color: RGB(25, 23, 22);
+  color: white;
+  cursor: pointer;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  text-align: center;
+   font-size: 1.5rem;
+   min-width: 100%;
+}
+
+/* Добавьте цвет фона к кнопке, если она нажата (добавьте класс .active с помощью JS) и при наведении на нее указателя мыши (наведите курсор мыши) */
+.active, .faq-question:hover {
+   background-color: white;
+   color: black;
+}
+
+/* Стиль панели аккордеона. Примечание: по умолчанию скрыто */
+.faq-answer {
+  padding: 0 18px;
+   background-color: RGB(25, 23, 22);
+  display: none;
+  overflow: hidden;
+}
+.answer-content{
+   font-size: 1.125rem;
+   list-style: none;
+   color: white;
+   padding-inline-start: 0rem;
+   max-width: 55rem;
+    margin: 1rem auto;
+}
+.answer-content > * {
+  margin-bottom: 0.5rem;
+}
+.answer-content > *:last-child {
+  margin-bottom: 0;
+}
+.faq-question::before {
+  content: "▼";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.3s ease;
+}
+.faq-question.active::before {
+  transform: rotate(180deg);
+}
+
+
+
+/* media */
+
+@media screen and (max-width: 75rem) {
+   .header-container {
+      height: 25rem;
+   }
+   .logo-text {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 48rem) {
+
+      .wrapper {
+      font-size: 0.875rem;
+   }
+   .site-header {
+    background-image: url(/img/vir_tattoo_header.webp);
+}
+   .header-container {
+      height: 25rem;
+   }
+   .logo-container {
+      display: none;
+   }
+   .main-navigation{
+      background-color: rgba(255,255,255,0.5);
+      color: #1d1f20;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      width: 3.75rem;
+   }
+   .menu-toggle-label {
+      cursor: pointer;
+      display: block;
+      font: 2em/1 'Oswald', sans-serif;
+      padding: 0.5em;
+      opacity: 1;
+      z-index: 100;
+      height: 100%;
+   }
+   .menu-toggle-icon,
+   .menu-toggle-icon:before,
+   .menu-toggle-icon:after {
+      background: #1d1f20;
+      border-radius: 0.05em;
+      height: 0.2em;
+      transition: all 0.2s ease-in-out;
+      width: 100%;
+   }
+   .menu-toggle-icon {
+      display: inline-block;
+      margin: 0.4em 0;
+      max-width: 1em;
+      position: relative;
+   }
+   .menu-toggle-label .menu-toggle-icon {
+      float: right;
+      width: 1.875rem;
+      height: 0.4375rem;
+   }
+   .menu-toggle-icon:before,
+   .menu-toggle-icon:after {
+      content: '';
+      left: 0;
+      position: absolute;
+   }
+   .menu-toggle-icon:before {
+      top: -0.4em;
+   }
+   .menu-toggle-icon:after {
+      bottom: -0.4em;
+   }
+   .menu-toggle-input[type=checkbox]:checked + .menu-toggle-label .menu-toggle-icon {
+      background: transparent;
+   }
+   .menu-toggle-input[type=checkbox]:checked + .menu-toggle-label .menu-toggle-icon:before {
+      top: 0;
+      transform: rotate(-45deg);
+   }
+   .menu-toggle-input[type=checkbox]:checked + .menu-toggle-label .menu-toggle-icon:after {
+      bottom: 0;
+      transform: rotate(45deg);
+   }
+   .menu-toggle-input:checked ~ .menu-overlay {
+      background: #f0f0f0;
+      bottom: 0;
+      left: 0;
+      min-height: 26.25rem;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 15rem;
+      z-index: -1;
+      overflow: hidden;
+      opacity: 0.9;
+   }
+   .navigation-menu{
+      font-size: 1.5em;
+      list-style: none;
+      padding-top: 1.25rem;
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      padding-left: 0rem;
+      display: flex;
+      flex-flow: column;
+      height: 21.875rem;
+      position: absolute;
+      color: #000000;
+      list-style-type: none;
+      z-index: 10;
+      width: 12rem;
+      text-decoration: none;
+      margin: 0;
+      justify-content: space-between;
+   }
+   .menu-toggle-input:checked ~ .navigation-menu {
+      margin: 2rem;
+      max-height: inherit;
+      opacity: 1;
+   }
+   .nav-link {
+      color: #1d1f20!important;
+      text-decoration: none;
+   }
+   .nav-link:hover {
+      text-decoration: underline;
+   }
+   .wrapper {
+      min-width: 38.125rem;
+      overflow: hidden;
+   }
+   .hero-content {
+      border-right: 0;
+   }
+   .hero-section__p-left {
+      padding: 0;
+   }
+   .portfolio-slider {
+      padding: 0;
+   }
+   .hero-content {
+      margin-top: 1.875rem;
+   }
+}
+@media screen and (max-width: 30rem) {
+
+   .site-header {
+      font-size: 0.75rem;
+      background-image: url(/img/vir_tattoo_header.webp);
+   }
+   .main-navigation {
+      width: 3rem;
+   }
+      .header-container {
+      height: 10rem;
+   }
+   .wrapper {
+      min-width: 20rem;
+      overflow: hidden;
+   }
+
+   .hero-section {
+      font-size: 0.70rem;
+   }
+   .portfolio-slider{
+   max-width: 17rem;
+   }
+}
+.swiper {
+  width: 100%;
+  color: #fff;
+}
+.slider-img {
+  width: 100%;
+}
+
+.portfolio-section{
+   max-width: 100%;
+   margin: 0 auto;
+   position: relative;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+}
+.masters-albums{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   list-style-type: none;
+   padding-left: 0px;
+}
+.album-thumbnail {
+   width: 12rem;
+   padding: 1rem;
+   border-radius: 20%;
+}
+.album-thumbnail:hover {
+ width: 12rem;
+ padding: 0rem;
+}
+.cta-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3rem;
+}
+.secondary-button {
+  min-width: 25rem;
+  min-height: 2.5rem;
+  font-size: 1.2rem;
+   border-radius: 25px
+}
+.secondary-button:hover {
+  color: red;
+}
+.studio-logo {
+  margin: 1rem 3rem 1rem 3rem;
+  border-radius: 50%;
+  width: 70px; height: 70px
+}
+
+@media screen and (max-width: 88rem) {
+   .cta-section {
+   display: flex;
+   flex-direction: column;
+   }
+}
+@media screen and (max-width: 48rem) {
+
+   .secondary-button {
+  min-width: 30rem;
+   }
+}
+@media screen and (max-width: 30rem) {
+   .portfolio-section{
+      font-size: 0.75rem;
+   }
+   .album-thumbnail {
+   width: 9rem;
+}
+
+      .secondary-button {
+  min-width: 18rem;
+   }
+}
+
+@media screen and (max-width: 30rem) {
+   .reviews-section {
+      font-size: 0.75rem;
+   }
+   .review-platform-logo {
+   width: 9rem;
+   }
+
+}
+.footer-section{
+  justify-content: center;
+}
+
+.studio-address {
+   text-decoration: none;
+   color: white;
+   justify-content: center;
+  display: flex;
+  text-align: center;
+}
+.social-links {
+   display: flex;
+  justify-content: center;
+   padding-inline-start: 0rem;
+}
+.social-item {
+   display: inline;
+   padding: 0.5rem;
+}
+.social-icon {
+   width: 3rem;
+}
+@keyframes speed {
+	0%, 20%, 60%, 100% {
+		transform: translateX(0);
+		transform: translateX(0);
+	}
+	40% {
+		transform: translateX(1.25rem);
+		transform: translateX(1.25rem);
+	}
+	80% {
+		transform: translateX(0.625rem);
+		transform: translateX(0.625rem);
+	}
+}
+@media screen and (max-width: 48rem) {
+   .social-links {
+      margin: 0 1.25rem;
+   }
+}
+@media screen and (max-width: 30rem) {
+
+   .footer-section {
+      font-size: 0.75rem;
+   }
+}
+
+
+@media (hover: none) {
+  a:hover {
+    /* Отключаем hover-эффекты для ссылок */
+    background-color: transparent; 
+  }
+  button:hover {
+    /* Отключаем hover-эффекты для кнопок */
+    transform: none; 
+  }
+     .album-thumbnail:hover{
+      width: 9rem;
+       transform: none; 
+   }
+}
+
+
+
+
+
+/*! modern-normalize v3.0.1 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*,::after,::before{box-sizing:border-box}html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji';line-height:1.15;-webkit-text-size-adjust:100%;tab-size:4}body{margin:0}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-color:currentcolor}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}legend{padding:0}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}
+/*# sourceMappingURL=/sm/d2d8cd206fb9f42f071e97460f3ad9c875edb5e7a4b10f900a83cdf8401c53a9.map */

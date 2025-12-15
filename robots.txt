@@ -1,0 +1,42 @@
+# robots.txt для tattoo-saransk.ru
+# Generated: 2025-12-15
+# Contact: +7(999)544-00-05
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /search/
+Disallow: /cgi-bin/
+
+# Блокируем служебные параметры
+Disallow: /*?ref=
+Disallow: /*?s=
+Disallow: /*?sel=
+
+# Разрешаем статические файлы (правильный синтаксис)
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Скорость сканирования
+Crawl-delay: 0.5
+
+# Разрешаем индексацию изображений
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: YandexImages
+Allow: /
+
+# Sitemap
+Sitemap: https://www.tattoo-saransk.ru/sitemap.xml
