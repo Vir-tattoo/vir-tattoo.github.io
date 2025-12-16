@@ -303,10 +303,92 @@
 .faq-question.active::before {
   transform: rotate(180deg);
 }
-
-
+.swiper {
+  width: 100%;
+  color: #fff;
+}
+.slider-img {
+  width: 100%;
+}
+.portfolio-section{
+   max-width: 100%;
+   margin: 0 auto;
+   position: relative;
+   padding-left: 0.5rem;
+   padding-right: 0.5rem;
+}
+.masters-albums{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   list-style-type: none;
+   padding-left: 0px;
+}
+.album-thumbnail {
+   width: 12rem;
+   padding: 1rem;
+   border-radius: 20%;
+}
+.album-thumbnail:hover {
+ width: 12rem;
+ padding: 0rem;
+}
+.cta-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3rem;
+}
+.secondary-button {
+  min-width: 25rem;
+  min-height: 2.5rem;
+  font-size: 1.2rem;
+   border-radius: 25px
+}
+.secondary-button:hover {
+  color: red;
+}
+.studio-logo {
+  margin: 1rem 3rem 1rem 3rem;
+  border-radius: 50%;
+  width: 70px; height: 70px
+}
+.social-links {
+   display: flex;
+   justify-content: center;
+   padding-inline-start: 0rem;
+}
+.social-item {
+   display: inline;
+   padding: 0.5rem;
+}
+.social-icon {
+      width: 3rem;
+}
+.studio-address {
+   text-decoration: none;
+   color: white;
+   justify-content: center;
+   display: flex;
+   text-align: center;
+}
+.footer-section {
+   font-size: 0.75rem;
+   justify-content: center;
+}
 
 /* media */
+@media screen and (max-width: 88rem) {
+   .cta-section {
+   display: flex;
+   flex-direction: column;
+   }
+}
 
 @media screen and (max-width: 75rem) {
    .header-container {
@@ -318,13 +400,15 @@
 }
 
 @media screen and (max-width: 48rem) {
-
-      .wrapper {
+   
+   .wrapper {
       font-size: 0.875rem;
+      min-width: 38.125rem;
+      overflow: hidden;
    }
    .site-header {
     background-image: url(/img/vir_tattoo_header.webp);
-}
+   }
    .header-container {
       height: 25rem;
    }
@@ -438,10 +522,6 @@
    .nav-link:hover {
       text-decoration: underline;
    }
-   .wrapper {
-      min-width: 38.125rem;
-      overflow: hidden;
-   }
    .hero-content {
       border-right: 0;
    }
@@ -454,9 +534,19 @@
    .hero-content {
       margin-top: 1.875rem;
    }
+   .secondary-button {
+  min-width: 30rem;
+   }
+      .social-links {
+      margin: 0 1.25rem;
+   }
 }
-@media screen and (max-width: 30rem) {
 
+@media screen and (max-width: 30rem) {
+   .wrapper {
+      min-width: 20rem;
+      overflow: hidden;
+   }
    .site-header {
       font-size: 0.75rem;
       background-image: url(/img/vir_tattoo_header.webp);
@@ -464,137 +554,38 @@
    .main-navigation {
       width: 3rem;
    }
-      .header-container {
+   .header-container {
       height: 10rem;
    }
-   .wrapper {
-      min-width: 20rem;
-      overflow: hidden;
-   }
-
    .hero-section {
       font-size: 0.70rem;
    }
    .portfolio-slider{
-   max-width: 17rem;
+      max-width: 17rem;
    }
-}
-.swiper {
-  width: 100%;
-  color: #fff;
-}
-.slider-img {
-  width: 100%;
-}
-
-.portfolio-section{
-   max-width: 100%;
-   margin: 0 auto;
-   position: relative;
-   padding-left: 0.5rem;
-   padding-right: 0.5rem;
-}
-.masters-albums{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: center;
-   align-items: center;
-   align-content: center;
-   list-style-type: none;
-   padding-left: 0px;
-}
-.album-thumbnail {
-   width: 12rem;
-   padding: 1rem;
-   border-radius: 20%;
-}
-.album-thumbnail:hover {
- width: 12rem;
- padding: 0rem;
-}
-.cta-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 3rem;
-}
-.secondary-button {
-  min-width: 25rem;
-  min-height: 2.5rem;
-  font-size: 1.2rem;
-   border-radius: 25px
-}
-.secondary-button:hover {
-  color: red;
-}
-.studio-logo {
-  margin: 1rem 3rem 1rem 3rem;
-  border-radius: 50%;
-  width: 70px; height: 70px
-}
-
-@media screen and (max-width: 88rem) {
-   .cta-section {
-   display: flex;
-   flex-direction: column;
-   }
-}
-@media screen and (max-width: 48rem) {
-
-   .secondary-button {
-  min-width: 30rem;
-   }
-}
-@media screen and (max-width: 30rem) {
    .portfolio-section{
       font-size: 0.75rem;
    }
    .album-thumbnail {
    width: 9rem;
-}
+   }
    .review-platform-logo {
       width: 9rem;
    }
-
-      .secondary-button {
-  min-width: 18rem;
+   .album-thumbnail:hover {
+      width: 9rem;
    }
-}
-
-@media screen and (max-width: 30rem) {
+   .review-platform-logo:hover  {
+      width: 9rem;
+   }
+   .secondary-button {
+      min-width: 18rem;
+   }
    .reviews-section {
       font-size: 0.75rem;
    }
-   .review-platform-logo {
-   width: 9rem;
-   }
 
-}
-.footer-section{
-  justify-content: center;
-}
 
-.studio-address {
-   text-decoration: none;
-   color: white;
-   justify-content: center;
-  display: flex;
-  text-align: center;
-}
-.social-links {
-   display: flex;
-  justify-content: center;
-   padding-inline-start: 0rem;
-}
-.social-item {
-   display: inline;
-   padding: 0.5rem;
-}
-.social-icon {
-   width: 3rem;
 }
 @keyframes speed {
 	0%, 20%, 60%, 100% {
@@ -611,18 +602,8 @@
 	}
 }
 @media screen and (max-width: 48rem) {
-   .social-links {
-      margin: 0 1.25rem;
-   }
+
 }
-@media screen and (max-width: 30rem) {
-
-   .footer-section {
-      font-size: 0.75rem;
-   }
-}
-
-
 @media (hover: none) {
   a:hover {
     /* Отключаем hover-эффекты для ссылок */
