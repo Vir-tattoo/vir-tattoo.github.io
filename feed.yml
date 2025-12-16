@@ -1,0 +1,184 @@
+# Фид для Яндекс.Справочника - Тату-студия "Вирь" Саранск
+version: "1.1"
+charset: "utf-8"
+shop:
+  name: "Тату-студия «Вирь»"
+  company: "ИП Гумаюнова Дарья Сергеевна"
+  url: "https://tattoo-saransk.ru/"
+  platform: "custom"
+  agency: "none"
+  email: "bupbtattoo@yandex.ru"
+  currencies:
+    - id: "RUB"
+      rate: "1"
+
+# Основная информация о студии
+organization:
+  type: "tattoo_studio"
+  name: "Тату-студия «Вирь»"
+  legal_name: "Индивидуальный предприниматель Гумаюнова Дарья Александровна"
+  description: "Профессиональная тату-студия в Саранске с командой опытных мастеров. Работаем во всех стилях: реализм, акварель, геометрия, минимализм. Гарантируем стерильность и индивидуальный подход к каждому клиенту."
+  categories:
+    - "Татуировки"
+    - "Пирсинг"
+    - "Консультации по татуировкам"
+    - "Обучение татуировке"
+  tags:
+    - "профессиональные мастера"
+    - "стерильность"
+    - "индивидуальные эскизы"
+    - "все стили тату"
+    - "бесплатная консультация"
+
+# Контакты и адрес
+contacts:
+  address:
+    country: "Россия"
+    region: "Республика Мордовия"
+    city: "Саранск"
+    street: "улица Победы"
+    building: "20"
+    postal_code: "430013"
+    location:
+      latitude: 54.207764
+      longitude: 45.109198
+  phones:
+    - "+79995440005"
+  emails:
+    - "bupbtattoo@yandex.ru"
+  working_hours:
+    - days: "MON,TUE,WED,THU,FRI,SAT,SUN"
+      hours: "10:00-22:00"
+
+# Социальные сети и внешние ссылки
+social_links:
+  vk: "https://vk.com/vir_tatu_saransk"
+  telegram: "https://t.me/saransktattoo"
+  whatsapp: "https://wa.me/79995440005"
+  vk_training: "https://vk.com/veerga_tattoo"
+  price_calculator: "https://m.vk.com/app5898182_-172116286?ref=group_menu#s=1738898"
+
+# Мастера студии
+masters:
+  - name: "Даша"
+    specialization: "Реализм, портреты, масштабные работы"
+    portfolio: "https://vk.com/album-172116286_285685348"
+    experience: "8+ лет"
+  - name: "Катя"
+    specialization: "Черно-белое тату, абстракция"
+    portfolio: "https://vk.com/album-172116286_305365379"
+    experience: "5+ лет"
+  - name: "Александра"
+    specialization: "Геометрия, минимализм, гостевые работы"
+    portfolio: "https://vk.com/album-172116286_308263785"
+    experience: "6+ лет"
+  - name: "Ксюша"
+    specialization: "Надписи, мини-татуировки"
+    portfolio: "https://vk.com/album-172116286_305546392"
+    experience: "2+ лет"
+  - name: "Саша"
+    specialization: "Трайбл, трайбл-модерн, андеграунд"
+    portfolio: "https://vk.com/album-172116286_258410224"
+    experience: "5+ лет"
+  - name: "Наташа"
+    specialization: "Черно-белые татуировки, орнаменты"
+    portfolio: "https://vk.com/album-172116286_306740051"
+    experience: "4+ лет"
+  - name: "Анастасия"
+    specialization: "Черно-белые тату, миниатюры"
+    portfolio: "https://vk.com/album-172116286_306740191"
+    experience: "4+ лет"
+  - name: "Дарья Гумаюнова"
+    role: "Основатель, мастер-тренер"
+    specialization: "Обучение татуировке, мастер-классы"
+    portfolio: "https://vk.com/veerga_tattoo"
+    experience: "8+ лет"
+
+# Услуги и цены
+services:
+  - name: "Мини-татуировка"
+    description: "Небольшие татуировки до 10 см²"
+    min_price: 2000
+    max_price: 5000
+    currency: "RUB"
+    duration: "1-2 часа"
+    styles: ["минимализм", "геометрия", "надписи"]
+  
+  - name: "Средняя татуировка"
+    description: "Татуировки от 10 до 50 см²"
+    min_price: 5000
+    max_price: 15000
+    currency: "RUB"
+    duration: "2-4 часа"
+    styles: ["реализм", "акварель", "черно-белое", "орнамент"]
+  
+  - name: "Крупная татуировка"
+    description: "Татуировки от 50 см² и выше"
+    min_price: 15000
+    max_price: 50000
+    currency: "RUB"
+    duration: "4+ часов, несколько сеансов"
+    styles: ["реализм", "портреты", "полный рукав", "спина"]
+  
+  - name: "Пирсинг"
+    description: "Профессиональный пирсинг с использованием стерильных материалов"
+    min_price: 1500
+    max_price: 5000
+    currency: "RUB"
+    duration: "30 минут"
+    types: ["ухо", "нос", "бровь", "пупок", "соски"]
+  
+  - name: "Консультация"
+    description: "Бесплатная консультация с чаем по всем вопросам татуировок"
+    price: 0
+    currency: "RUB"
+    duration: "30-60 минут"
+    is_free: true
+
+# Преимущества студии
+advantages:
+  - "✅ Команда 4–6 профессиональных мастеров"
+  - "✅ Работаем во всех стилях татуировок"
+  - "✅ Гарантия стерильности - только одноразовые материалы"
+  - "✅ Бесплатная консультация с чаем"
+  - "✅ Индивидуальные эскизы для каждого клиента"
+  - "✅ Обучение татуировке для начинающих мастеров"
+  - "✅ Удобное расположение в центре Саранска"
+
+# Отзывы и рейтинги
+reviews_summary:
+  rating: 4.9
+  reviews_count: 150
+  platforms:
+    - name: "Яндекс.Карты"
+      url: "https://yandex.ru/maps/org/tatu_studiya_vir/79147482479/reviews/"
+    - name: "VK отзывы"
+      url: "https://vk.com/reviews-172116286"
+    - name: "2ГИС"
+      url: "https://2gis.ru/saransk/firm/70000001093459230/tab/reviews"
+    - name: "Google Maps"
+      url: "https://share.google/2tiEPPDlNxY79P7DY"
+
+# Дополнительная информация
+additional_info:
+  sterilization: "Все процедуры проводятся с использованием одноразовых материалов и оборудования. Стерилизация инструментов осуществляется в автоклаве."
+  booking: "Запись на консультацию и сеанс осуществляется через VK, Telegram или WhatsApp."
+  cancellation_policy: "Отмена сеанса возможна не позднее чем за 24 часа."
+  payment_methods: ["Наличные", "СБП", "Перевод по QR-коду"]
+  parking: "Бесплатная парковка рядом со студией"
+  accessibility: "Студия расположена на первом этаже, вход без ступеней"
+
+# SEO информация
+seo:
+  meta_title: "Тату-студия «Вирь» в Саранске | Профессиональные татуировки"
+  meta_description: "Тату-студия «Вирь» в Саранске — профессиональные мастера тату. Индивидуальные эскизы, все стили, гарантия стерильности. Цены, портфолио, запись на консультацию."
+  keywords:
+    - "тату саранск"
+    - "тату студия вирь"
+    - "мастера тату саранск"
+    - "профессиональные татуировки"
+    - "цены на татуировки саранск"
+    - "портфолио тату мастеров"
+
+# Дата обновления
+last_updated: "2025-12-15"
