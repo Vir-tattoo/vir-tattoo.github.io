@@ -39,7 +39,4 @@ User-agent: YandexImages
 Allow: /
 
 # Sitemap
-Sitemap: https://www.tattoo-saransk.ru/sitemap.xml
-
-# Cloudflare caching
-Cache-Control: public, max-age=86400
+Sitemap: https://tattoo-saransk.ru/sitemap.xml
