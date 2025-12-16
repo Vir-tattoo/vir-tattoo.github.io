@@ -56,21 +56,26 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": ["TattooStudio", "LocalBusiness", "HealthAndBeautyBusiness"],
+      "@type": "LocalBusiness",
       "@id": "https://www.tattoo-saransk.ru/#tattoostudio",
       "name": "Тату-студия Вирь",
       "description": "Профессиональная тату-студия в Саранске. Индивидуальные эскизы, все стили татуировок, гарантия стерильности и качества.",
-      "image": [
-        "https://www.tattoo-saransk.ru/img/logo.webp",
-        "https://www.tattoo-saransk.ru/img/vir_tattoo_header.webp"
-      ],
-      "logo": "https://www.tattoo-saransk.ru/img/logo.webp",
+      "image": "https://www.tattoo-saransk.ru/img/logo.webp",
       "url": "https://www.tattoo-saransk.ru/",
       "telephone": "+7(999)544-00-05",
-      "email": "info@tattoo-saransk.ru",
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Татуировка"
+        },
+        {
+          "@type": "Offer",
+          "name": "Пирсинг"
+        }
+      ],
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "ул. Победы, д.20",
+        "streetAddress": "г. Саранск, ул. Победы, д.20",
         "addressLocality": "Саранск",
         "addressRegion": "Республика Мордовия",
         "postalCode": "430013",
@@ -96,28 +101,7 @@
         }
       ],
       "priceRange": "$$",
-      "hasMap": "https://yandex.ru/maps/org/tatu_studiya_vir/79147482479/",
-      "sameAs": [
-        "https://m.vk.com/vir_tatu_saransk",
-        "https://t.me/saransktattoo"
-      ],
-      "review": {
-        "@type": "Review",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5",
-          "bestRating": "5"
-        },
-        "author": {
-          "@type": "Person",
-          "name": "Клиент студии"
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "reviewCount": "50"
-      }
+      "hasMap": "https://yandex.ru/maps/org/tatu_studiya_vir/79147482479/"
     },
     {
       "@type": "FAQPage",
