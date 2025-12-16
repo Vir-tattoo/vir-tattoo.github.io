@@ -1,184 +1,266 @@
-# Фид для Яндекс.Справочника - Тату-студия "Вирь" Саранск
-version: "1.1"
-charset: "utf-8"
-shop:
-  name: "Тату-студия «Вирь»"
-  company: "ИП Гумаюнова Дарья Сергеевна"
-  url: "https://tattoo-saransk.ru/"
-  platform: "custom"
-  agency: "none"
-  email: "bupbtattoo@yandex.ru"
-  currencies:
-    - id: "RUB"
-      rate: "1"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2025-12-17T00:00">
+  <shop>
+    <name>Тату-студия «Вирь»</name>
+    <company>ИП Гумаюнова Дарья Сергеевна</company>
+    <url>https://tattoo-saransk.ru/</url>
+    <email>bupbtattoo@yandex.ru</email>
+    <currencies>
+      <currency id="RUB" rate="1"/>
+    </currencies>
+    <!-- Категории в порядке приоритета -->
+    <categories>
+      <category id="1">Татуировки от опытных мастеров</category>
+      <category id="2">Реалистичные татуировки</category>
+      <category id="3">Татуировки от начинающих мастеров</category>
+      <category id="4">Перекрытие и коррекция</category>
+      <category id="5">Обучение татуировке</category>
+      <category id="6">Подарочные сертификаты</category>
+      <category id="7">Пирсинг</category> <!-- Неосновная услуга в конце -->
+    </categories>
+    <offers>
+      <!-- 1. Татуировки от опытных мастеров -->
+      <offer id="tattoo_experienced_hour_1" available="true" type="artist.title">
+        <url>https://tattoo-saransk.ru/</url>
+        <price>3000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2510998/2a000001926864101bb27bb7d0e0ba014bf8/orig</picture>
+        <name>Татуировки любой сложности (почасовая)</name>
+        <description>Тату любой сложности от опытных мастеров студии "Вирь". Индивидуальный эскиз, гарантия стерильности.</description>
+        <sales_notes>Цена за 1 час работы. Окончательная стоимость зависит от размера и сложности.</sales_notes>
+        <param name="Уровень мастера">Опытный</param>
+        <param name="Тип расчета">Почасовая оплата</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="tattoo_experienced_cm_2" available="true" type="artist.title">
+        <url>https://vk.com/album-172116286_258410224</url>
+        <price>4000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>1</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2790747/2a0000019268600adcbf86c48556a12da75f/orig</picture>
+        <name>Тату от мастера с опытом (за площадь)</name>
+        <description>Качественная татуировка от одного из наших опытных мастеров. Портфолио работ доступно по ссылке.</description>
+        <sales_notes>Цена от 4000 руб. за 10 см². Точная стоимость определяется на консультации.</sales_notes>
+        <param name="Уровень мастера">Опытный</param>
+        <param name="Единица">10 куб. сантиметров</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
 
-# Основная информация о студии
-organization:
-  type: "tattoo_studio"
-  name: "Тату-студия «Вирь»"
-  legal_name: "Индивидуальный предприниматель Гумаюнова Дарья Александровна"
-  description: "Профессиональная тату-студия в Саранске с командой опытных мастеров. Работаем во всех стилях: реализм, акварель, геометрия, минимализм. Гарантируем стерильность и индивидуальный подход к каждому клиенту."
-  categories:
-    - "Татуировки"
-    - "Пирсинг"
-    - "Консультации по татуировкам"
-    - "Обучение татуировке"
-  tags:
-    - "профессиональные мастера"
-    - "стерильность"
-    - "индивидуальные эскизы"
-    - "все стили тату"
-    - "бесплатная консультация"
+      <!-- 2. Реалистичные татуировки (отдельная премиальная категория) -->
+      <offer id="realism_daria_3" available="true" type="artist.title">
+        <url>https://vk.com/album-172116286_285685348</url>
+        <price>7000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>2</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/3911103/2a000001938cb5193fbb82ea4e95f5c56ab0/orig</picture>
+        <name>Реалистичная татуировка от мастера Дарьи</name>
+        <description>Реалистичная татуировка от одного из первых мастеров Саранска - Дарьи Гумаюновой. Высокий уровень детализации.</description>
+        <sales_notes>Цена от 7000 руб. за 15 см². Портфолио мастера по ссылке.</sales_notes>
+        <param name="Мастер">Дарья Гумаюнова</param>
+        <param name="Стиль">Реализм</param>
+        <param name="Единица">15 куб. сантиметров</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
 
-# Контакты и адрес
-contacts:
-  address:
-    country: "Россия"
-    region: "Республика Мордовия"
-    city: "Саранск"
-    street: "улица Победы"
-    building: "20"
-    postal_code: "430013"
-    location:
-      latitude: 54.207764
-      longitude: 45.109198
-  phones:
-    - "+79995440005"
-  emails:
-    - "bupbtattoo@yandex.ru"
-  working_hours:
-    - days: "MON,TUE,WED,THU,FRI,SAT,SUN"
-      hours: "10:00-22:00"
+      <!-- 3. Татуировки от начинающих мастеров -->
+      <offer id="tattoo_beginner_4" available="true" type="artist.title">
+        <url>https://vk.com/album-172116286_305546392</url>
+        <price>2000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/13488316/2a00000192685a64a1e16d114dbcc6f58808/orig</picture>
+        <name>Тату от начинающего мастера</name>
+        <description>Татуировка от нашего мастера с начальным уровнем опыта под контролем старшего мастера. Идеально для простых эскизов.</description>
+        <sales_notes>Цена от 2000 руб. за 10 см². Доступный вариант для простых работ.</sales_notes>
+        <param name="Уровень мастера">Начинающий</param>
+        <param name="Единица">10 куб. сантиметров</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
 
-# Социальные сети и внешние ссылки
-social_links:
-  vk: "https://vk.com/vir_tatu_saransk"
-  telegram: "https://t.me/saransktattoo"
-  whatsapp: "https://wa.me/79995440005"
-  vk_training: "https://vk.com/veerga_tattoo"
-  price_calculator: "https://m.vk.com/app5898182_-172116286?ref=group_menu#s=1738898"
+      <!-- 4. Перекрытие и коррекция -->
+      <offer id="cover_upgrade_5" available="true" type="artist.title">
+        <url>https://vk.com/vir_tatu_saransk</url>
+        <price>5000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2899371/2a0000019270d0b43697c5a2658b6a66efb9/orig</picture>
+        <name>Обновить старую татуировку</name>
+        <description>Обновим вашу старую татуировку, вдохнем в нее новую жизнь, добавим детали.</description>
+        <sales_notes>Цена от 5000 руб. за 10 см². Сложность влияет на стоимость.</sales_notes>
+        <param name="Тип работы">Коррекция и обновление</param>
+        <param name="Единица">10 куб. сантиметров</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="cover_scars_6" available="true" type="artist.title">
+        <url>https://vk.com/vir_tatu_saransk</url>
+        <price>5000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/10118156/2a0000019270cc0c0341cb0950b871e7ba35/orig</picture>
+        <name>Перекрытие шрамов</name>
+        <description>Перекроем шрамы любой сложности. Подберем оптимальный дизайн для наилучшего эстетического результата.</description>
+        <sales_notes>Цена от 5000 руб. за 10 см². Консультация мастера обязательна.</sales_notes>
+        <param name="Тип работы">Перекрытие шрамов</param>
+        <param name="Единица">10 куб. сантиметров</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="cover_oldtattoo_7" available="true" type="artist.title">
+        <url>https://vk.com/vir_tatu_saransk</url>
+        <price>5000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2899371/2a0000019270cb354ec1ebb898aaf544aed8/orig</picture>
+        <name>Перекрытие старой татуировки</name>
+        <description>Полное перекрытие старой татуировки новым дизайном. Учтем все ваши пожелания и найдем лучшее решение.</description>
+        <sales_notes>Цена от 5000 руб. за 10 см². Требуется детальное обсуждение эскиза.</sales_notes>
+        <param name="Тип работы">Полное перекрытие</param>
+        <param name="Единица">10 куб. сантиметров</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
 
-# Мастера студии
-masters:
-  - name: "Даша"
-    specialization: "Реализм, портреты, масштабные работы"
-    portfolio: "https://vk.com/album-172116286_285685348"
-    experience: "8+ лет"
-  - name: "Катя"
-    specialization: "Черно-белое тату, абстракция"
-    portfolio: "https://vk.com/album-172116286_305365379"
-    experience: "5+ лет"
-  - name: "Александра"
-    specialization: "Геометрия, минимализм, гостевые работы"
-    portfolio: "https://vk.com/album-172116286_308263785"
-    experience: "6+ лет"
-  - name: "Ксюша"
-    specialization: "Надписи, мини-татуировки"
-    portfolio: "https://vk.com/album-172116286_305546392"
-    experience: "2+ лет"
-  - name: "Саша"
-    specialization: "Трайбл, трайбл-модерн, андеграунд"
-    portfolio: "https://vk.com/album-172116286_258410224"
-    experience: "5+ лет"
-  - name: "Наташа"
-    specialization: "Черно-белые татуировки, орнаменты"
-    portfolio: "https://vk.com/album-172116286_306740051"
-    experience: "4+ лет"
-  - name: "Анастасия"
-    specialization: "Черно-белые тату, миниатюры"
-    portfolio: "https://vk.com/album-172116286_306740191"
-    experience: "4+ лет"
-  - name: "Дарья Гумаюнова"
-    role: "Основатель, мастер-тренер"
-    specialization: "Обучение татуировке, мастер-классы"
-    portfolio: "https://vk.com/veerga_tattoo"
-    experience: "8+ лет"
+      <!-- 5. Обучение татуировке (ключевое направление) -->
+      <offer id="training_masterclass_8" available="true" type="artist.title">
+        <url>https://vk.com/vir_tatu_saransk</url>
+        <price>50000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/4078836/2a000001927735be56e270311edecf676f6f/orig</picture>
+        <name>Мастер-класс</name>
+        <description>Я делаю татуировку, вы смотрите, рассказываю и показываю все свои «фишечки». Либо вы делаете тату под моим руководством.</description>
+        <sales_notes>Длительность: 1 день. Все вопросы по ссылке: https://vk.com/veerga_tattoo</sales_notes>
+        <param name="Формат">Индивидуальный мастер-класс</param>
+        <param name="Длительность">1 день</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="training_group_9" available="true" type="artist.title">
+        <url>https://vk.com/vir_tatu_saransk</url>
+        <price>70000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2791887/2a00000192772e77f33007fb2170e37be628/orig</picture>
+        <name>Групповое обучение татуировке</name>
+        <description>5 занятий на искусственной коже + 5 на моделях. Теория порционно на практике. Оборудование и материалы предоставляются.</description>
+        <sales_notes>Курс 10 дней. Вопросы: https://vk.com/veerga_tattoo</sales_notes>
+        <param name="Формат">Групповой курс (до 10 чел.)</param>
+        <param name="Длительность">10 дней</param>
+        <param name="Включено">Оборудование, материалы, модели</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="training_individual_10" available="true" type="artist.title">
+        <url>https://vk.com/vir_tatu_saransk</url>
+        <price>100000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/13852611/2a00000192772ca47d2963aad18778716605/orig</picture>
+        <name>Индивидуальное обучение "под ключ"</name>
+        <description>10 практических занятий на моделях. Подготовка мастера с нуля. Гибкий график. Оборудование и материалы включены.</description>
+        <sales_notes>Полный курс. Вопросы: https://vk.com/veerga_tattoo</sales_notes>
+        <param name="Формат">Индивидуальный курс</param>
+        <param name="Длительность">10 дней</param>
+        <param name="Результат">Подготовка мастера "под ключ"</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
 
-# Услуги и цены
-services:
-  - name: "Мини-татуировка"
-    description: "Небольшие татуировки до 10 см²"
-    min_price: 2000
-    max_price: 5000
-    currency: "RUB"
-    duration: "1-2 часа"
-    styles: ["минимализм", "геометрия", "надписи"]
-  
-  - name: "Средняя татуировка"
-    description: "Татуировки от 10 до 50 см²"
-    min_price: 5000
-    max_price: 15000
-    currency: "RUB"
-    duration: "2-4 часа"
-    styles: ["реализм", "акварель", "черно-белое", "орнамент"]
-  
-  - name: "Крупная татуировка"
-    description: "Татуировки от 50 см² и выше"
-    min_price: 15000
-    max_price: 50000
-    currency: "RUB"
-    duration: "4+ часов, несколько сеансов"
-    styles: ["реализм", "портреты", "полный рукав", "спина"]
-  
-  - name: "Пирсинг"
-    description: "Профессиональный пирсинг с использованием стерильных материалов"
-    min_price: 1500
-    max_price: 5000
-    currency: "RUB"
-    duration: "30 минут"
-    types: ["ухо", "нос", "бровь", "пупок", "соски"]
-  
-  - name: "Консультация"
-    description: "Бесплатная консультация с чаем по всем вопросам татуировок"
-    price: 0
-    currency: "RUB"
-    duration: "30-60 минут"
-    is_free: true
+      <!-- 6. Подарочные сертификаты -->
+      <offer id="certificate_11" available="true" type="artist.title">
+        <url>https://vk.com/market/product/podarochny-sertifikat-172116286-1703330</url>
+        <price>3000</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/1356083/2a000001938c87c08ff72021ed8f8e92bd6c/orig</picture>
+        <name>Подарочный Сертификат</name>
+        <description>Подарочный сертификат на любой номинал в тату-студии "Вирь". Идеальный подарок для близких.</description>
+        <sales_notes>Номинал от 3000 руб. Срок действия 1 год. Приобретается онлайн.</sales_notes>
+        <param name="Тип">Электронный сертификат</param>
+        <param name="Срок действия">12 месяцев</param>
+        <delivery>false</delivery>
+        <pickup>false</pickup>
+        <store>true</store>
+      </offer>
 
-# Преимущества студии
-advantages:
-  - "✅ Команда 4–6 профессиональных мастеров"
-  - "✅ Работаем во всех стилях татуировок"
-  - "✅ Гарантия стерильности - только одноразовые материалы"
-  - "✅ Бесплатная консультация с чаем"
-  - "✅ Индивидуальные эскизы для каждого клиента"
-  - "✅ Обучение татуировке для начинающих мастеров"
-  - "✅ Удобное расположение в центре Саранска"
-
-# Отзывы и рейтинги
-reviews_summary:
-  rating: 4.9
-  reviews_count: 150
-  platforms:
-    - name: "Яндекс.Карты"
-      url: "https://yandex.ru/maps/org/tatu_studiya_vir/79147482479/reviews/"
-    - name: "VK отзывы"
-      url: "https://vk.com/reviews-172116286"
-    - name: "2ГИС"
-      url: "https://2gis.ru/saransk/firm/70000001093459230/tab/reviews"
-    - name: "Google Maps"
-      url: "https://share.google/2tiEPPDlNxY79P7DY"
-
-# Дополнительная информация
-additional_info:
-  sterilization: "Все процедуры проводятся с использованием одноразовых материалов и оборудования. Стерилизация инструментов осуществляется в автоклаве."
-  booking: "Запись на консультацию и сеанс осуществляется через VK, Telegram или WhatsApp."
-  cancellation_policy: "Отмена сеанса возможна не позднее чем за 24 часа."
-  payment_methods: ["Наличные", "СБП", "Перевод по QR-коду"]
-  parking: "Бесплатная парковка рядом со студией"
-  accessibility: "Студия расположена на первом этаже, вход без ступеней"
-
-# SEO информация
-seo:
-  meta_title: "Тату-студия «Вирь» в Саранске | Профессиональные татуировки"
-  meta_description: "Тату-студия «Вирь» в Саранске — профессиональные мастера тату. Индивидуальные эскизы, все стили, гарантия стерильности. Цены, портфолио, запись на консультацию."
-  keywords:
-    - "тату саранск"
-    - "тату студия вирь"
-    - "мастера тату саранск"
-    - "профессиональные татуировки"
-    - "цены на татуировки саранск"
-    - "портфолио тату мастеров"
-
-# Дата обновления
-last_updated: "2025-12-15"
+      <!-- 7. Пирсинг (неосновные услуги в конце) -->
+      <offer id="microdermal_12" available="true" type="artist.title">
+        <url>https://tattoo-saransk.ru/</url>
+        <price>2500</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2790747/2a0000019b0dc86866579276ba8dcc0dadd1/orig</picture>
+        <name>Микродермал</name>
+        <description>Установка микродермала. В стоимость входит титановый якорь. Профессионально, стерильно, безопасно.</description>
+        <sales_notes>Цена включает титановый якорь. Требуется запись.</sales_notes>
+        <param name="Тип">Микродермал</param>
+        <param name="Материал">Титан</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="navel_13" available="true" type="artist.title">
+        <url>https://tattoo-saransk.ru/</url>
+        <price>1800</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/17712810/2a0000019b0ddc700799da764219b7041b18/orig</picture>
+        <name>Прокол пупка</name>
+        <description>Прокол пупка. В стоимость входит базовое украшение из имплантационного титана.</description>
+        <sales_notes>Включено титановое украшение. Необходима консультация.</sales_notes>
+        <param name="Зона">Пупок</param>
+        <param name="Материал">Титан</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="ears_14" available="true" type="artist.title">
+        <url>https://tattoo-saransk.ru/</url>
+        <price>1800</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/17763327/2a0000019b0dd8841b3ee32a0ecc7d87859d/orig</picture>
+        <name>Пирсинг ушей (хрящ, мочка)</name>
+        <description>Пирсинг ушей: хрящ или мочка. В стоимость входит базовое украшение из титана.</description>
+        <sales_notes>Цена за одну точку прокола. Запись обязательна.</sales_notes>
+        <param name="Зона">Ухо (хрящ/мочка)</param>
+        <param name="Материал">Титан</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+      <offer id="mouth_15" available="true" type="artist.title">
+        <url>https://tattoo-saransk.ru/</url>
+        <price>1800</price>
+        <currencyId>RUB</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://avatars.mds.yandex.net/get-sprav-products/2733259/2a0000019b0dcd0fdf2c1e26cff8158184ef/orig</picture>
+        <name>Проколы губ, языка</name>
+        <description>Профессиональный прокол губ или языка. В стоимость входит базовое украшение из титана.</description>
+        <sales_notes>Цена за одну точку прокола. Обязательна предварительная консультация.</sales_notes>
+        <param name="Зона">Губы, язык</param>
+        <param name="Материал">Титан</param>
+        <delivery>false</delivery>
+        <pickup>true</pickup>
+        <store>true</store>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>
