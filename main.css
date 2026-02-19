@@ -604,7 +604,7 @@
       max-width: 17rem;
    }
    .about-photo{
-      max-width: 19rem;
+      max-width: 100%;
    }
    .portfolio-section{
       font-size: 0.75rem;
