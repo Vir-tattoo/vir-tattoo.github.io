@@ -224,6 +224,31 @@
       transform: translateX(0.625rem);
    }
 }
+.about-content{
+  max-width: 80rem;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.about-info{
+   font-size: 1.125rem;
+   color: white;
+   padding-inline-start: 0rem;
+   max-width: 30.375rem;
+   position: relative;
+   margin-left: 1vw;
+}
+.about-photo {
+   max-width: 30.375rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   position: relative;
+}
 .reviews-section {
    max-width: 100%;
    margin: 0 auto;
@@ -577,6 +602,9 @@
    }
    .portfolio-slider{
       max-width: 17rem;
+   }
+   .about-photo{
+      max-width: 19rem;
    }
    .portfolio-section{
       font-size: 0.75rem;
