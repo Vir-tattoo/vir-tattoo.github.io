@@ -120,13 +120,6 @@
   padding-right: 0.5rem;
 }
 
-.cta-button {
-  min-width: 100%;
-  min-height: 2.5rem;
-  font-size: 1.2rem;
-  border-radius: 25px;
-}
-
 .social-button {
   justify-content: space-around;
    padding-inline-start: 0rem;
